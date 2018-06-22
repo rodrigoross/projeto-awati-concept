@@ -1,0 +1,104 @@
+@charset "utf-8";
+/**		CSS Document
+   * ------------------------------------------------------------------------
+   * Por Rodrigo Ross - 2018
+   * awati - Tecnologia Planejada
+   * ------------------------------------------------------------------------
+   */
+body{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	width: 100%;
+}
+/**
+   * ------------------------------------------------------------------------
+   * Cabeçalho
+   * ------------------------------------------------------------------------
+   */
+.main-header{
+    margin-bottom: 20px;
+    margin-top: 30px;
+} 
+
+#navbar.container-fluid{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+}
+
+.nav-brand #awati-brand{
+	width: auto;
+	float: left;
+	margin-top: 20px;
+    border-bottom: #FAA61A;
+}
+
+#menu-header  {
+    float: right;
+}
+#menu-header .menu-button{
+    /* Para poder forçar o menu na parte de baixo alinhando com a logo*/
+	display: table-cell;
+    vertical-align: bottom;
+    
+	text-decoration: none;
+	padding: 20px 10px 5px;
+    color: #bbbbbb;
+    margin-right: 0;
+	font-size: 18px;
+    border-bottom: 3px solid transparent;
+}
+
+#menu-header .menu-button:hover{
+    color:#5C2D91;
+    border-bottom: 3px solid #FAA61A ;
+}
+
+/**
+   * ------------------------------------------------------------------------
+   * Corpo
+   * ------------------------------------------------------------------------
+   */
+/*Banner*/
+#banner{
+    clear: all;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Serviços*/
+#servico.caixa-servico{
+	margin: 2px 0px 0px 0px;
+    width: 100%;
+}
+
+.tipo{
+    list-style-type: none;
+    width: 33%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.tipo .img-servico{
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.tipo h3{
+    color:#686868 ;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tipo p{
+	display: block;
+    margin: 5px auto;
+    padding: 10px;
+    width: 300px;
+    text-align: justify;
+    color: #b3b3b3;
+}
+
