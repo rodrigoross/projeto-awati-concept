@@ -59,6 +59,16 @@ body{
    * Corpo
    * ------------------------------------------------------------------------
    */
+#produto,
+#equipe,
+#produto{
+	clear: both;
+	margin-top: 20px;
+	padding-top: 5px;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
 /*Banner*/
 #banner{
     clear: all;
@@ -71,6 +81,7 @@ body{
 #servico.caixa-servico{
 	margin: 2px 0px 0px 0px;
     width: 100%;
+	height: auto;
 }
 
 .tipo{
@@ -102,3 +113,84 @@ body{
     color: #b3b3b3;
 }
 
+/*Produtos*/
+#produto{
+	border-top: #5C2D91 medium dashed;
+} 
+
+#produto .caixa-produto{
+	width: 100%;
+	margin-bottom: 15px;
+	display: block;
+}
+.img-projeto{
+	float: left;
+	margin: 5px;
+	
+} 
+.info-produto{
+	background: url(http://via.placeholder.com/2000x40);
+	background-repeat: no-repeat;
+	margin: 5px;
+	padding-left: 10px;
+	padding-top: 5%;
+}
+.info-produto h1{
+	text-align: center;
+	color:#474747;
+    text-transform: uppercase;
+}
+
+.info-produto p{
+	color: #626262;
+	text-align: right;
+}
+
+/*Equipe - Quem Somos*/
+#equipe .funcionarios{
+	list-style-type: none;
+	margin: 2px 0px 0px 0px;
+    width: 100%;
+	height: auto;
+	display: block;
+}
+
+.quem-somos{
+	margin: 15px 0px;
+	padding: 5px 0px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.funcionario-d,
+.funcionario-e{
+	padding-left: 15%;
+	padding-right: 15%;
+	margin: 5px;
+	width: 100%;
+	height: 250px;
+}
+
+.funcionario-d img {
+	float: left;
+	width: 200px;
+}
+
+.funcionario-d h4, 
+.funcionario-d p {
+	margin: 5px;
+	padding: 5px 0px 0px 10px;
+	text-align: left;
+}
+
+.funcionario-e img {
+	float: right;
+	width: 200px;
+}
+
+.funcionario-e h4, 
+.funcionario-e p {
+	margin: 5px;
+	padding: 5px 0px 0px 10px;
+	text-align: right;
+}
