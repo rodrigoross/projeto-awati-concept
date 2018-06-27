@@ -65,8 +65,6 @@ body{
 	clear: both;
 	margin-top: 20px;
 	padding-top: 5px;
-	margin-left: 5px;
-	padding-left: 5px;
 }
 
 /*Banner*/
@@ -78,17 +76,10 @@ body{
 }
 
 /*Serviços*/
-#servico.caixa-servico{
-	margin: 2px 0px 0px 0px;
-    width: 100%;
-	height: auto;
-}
-
 .tipo{
     list-style-type: none;
     width: 33%;
     height: 100%;
-    float: left;
     position: relative;
 }
 
@@ -114,100 +105,14 @@ body{
 }
 
 /*Produtos*/
-#produto{
-	border-top: #5C2D91 medium dashed;
-	width: 100%;
-} 
-
-#produto .caixa-produto{
-	margin-bottom: 15px;
-	display: block;
-}
-.img-projeto{
-	float: left;
-} 
-
-.info-produto{
-	background-repeat: no-repeat;
-	margin: 5px;
-	padding-top: 5%;
-}
-.info-produto h1{
-	text-align: center;
+#info-produto h1{
 	color:#474747;
     text-transform: uppercase;
 }
 
-.info-produto p{
+#info-produto p{
 	color: #626262;
-	text-align: right;
 }
-
-/*Equipe - Quem Somos*/
-#equipe .funcionarios{
-	list-style-type: none;
-	margin: 2px 0px 0px 0px;
-    width: 100%;
-	height: auto;
-	display: block;
-}
-
-.intro-secao{
-	margin: 15px 0px;
-	padding: 5px 0px;
-	font-size: 20px;
-	text-align: center;
-}
-
-.funcionario-d{
-	display: block;
-	padding-left: 10%;
-	margin: 5px;
-	height: 250px;
-}
-.funcionario-e{
-	display: block;
-	padding-right: 10%;
-	margin: 5px;
-	height: 250px;
-}
-
-.funcionario-d img {
-	float: left;
-	width: 200px;
-}
-
-.bio{
-	width: 50%;
-	float: left;
-	padding-right: 20px;
-}
-
-.funcionario-d h4, 
-.funcionario-d p {
-	margin: 5px;
-	padding: 5px 0px 0px 10px;
-	text-align: left;
-}
-
-.funcionario-e img {
-	float: right;
-	width: 200px;
-}
-
-.bio-e{
-	width: 50%;
-	float: right;
-	padding-right: 20px;
-}
-
-.bio-e h4, 
-.bio-e p {
-	margin: 5px;
-	padding: 5px 0px 0px 10px;
-	text-align: right;
-}
-
 /*Contato*/
 #contato{
 	width: 100%;
@@ -215,59 +120,41 @@ body{
 	display: block;
 }
 
-.contato{
-	margin: 5px;
-	padding: 0 15%;
-}
-
-.intro-secao{
-	margin: 15px 0px;
-	padding: 5px 0px;
-	font-size: 20px;
-	text-align: center;
-}
-
 .formulario{
-	border-radius: 5px;
-	border-style: solid;
-	border-color: #bebebe;
+	width: 80%;
+	margin: 5% 10%;
+	height: 350px;
 }
-
-.pessoal{
-	left: 0;
-}
-
-#name,
-#tel,
-#mail{
-	width: 64%;
-	margin-top: 4px;
-	margin-left: 6px;
-}
-
-#msg{
-	border-width: 2px;
-	float: left;
-	margin: 10%;
-	align-content: center;
-	width: 70%;
-	height: 200px;
-	margin-top: 4px;
-	color: #888888;
-}
-#contato .formulario:focus{
-	border-color: #441973;
-}
-
 
 /**
    * ------------------------------------------------------------------------
    * Rodape
    * ------------------------------------------------------------------------
    */
-footer{
-	clear: both;
-	background-color: #5C2D91;
+
+.borda{
+	border: medium dashed #5C2D91;
+}
+.main-footer{
+	color:#AD7009;
+	opacity: 0.9;
+	background-color: #3C1D5E;
 	width: 100%;
-	height: 200px;
+	height: 100px;
+}
+
+.info{
+	font-size: 24px;
+	font-weight: 300;
+}
+.social{
+	color: azure;
+}
+.cpright{
+	color:azure;
+	font-size: 15px;
+	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+	font-weight: bold;
+	left: 0;
+	bottom: 0;
 }
