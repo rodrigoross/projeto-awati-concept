@@ -59,6 +59,44 @@ body{
    * Corpo
    * ------------------------------------------------------------------------
    */
+   .btn-outline-awati {
+    color: #FAA61A;
+    background-color: transparent;
+    background-image: none;
+    border-color: #FAA61A;
+  }
+  
+  .btn-outline-awati:hover {
+    color: #fff;
+    background-color: #FAA61A;
+    border-color: #FAA61A;
+  }
+  
+  .btn-outline-awati:focus, .btn-outline-awati.focus {
+    box-shadow: 0 0 0 0.2rem rgba(156, 40, 167, 0.5);
+  }
+  
+  .btn-outline-awati.disabled, .btn-outline-awati:disabled {
+    color: #FAA61A;
+    background-color: transparent;
+  }
+  
+  .btn-outline-awati:not(:disabled):not(.disabled):active, .btn-outline-awati:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-awati.dropdown-toggle {
+    color: #fff;
+    background-color: #FAA61A;
+    border-color: #FAA61A;
+  }
+  
+  .btn-outline-awati:not(:disabled):not(.disabled):active:focus, .btn-outline-awati:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-outline-awati.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(156, 40, 167, 0.5);
+  }
+
+
+.btn-social:hover{
+    background-color:#FAA61A;
+}
 #produto,
 #equipe,
 #produto{
@@ -133,14 +171,20 @@ body{
    */
 
 .borda{
-	border: medium dashed #5C2D91;
+    border-right: thin solid #1E0A33;
+}
+
+.info{
+    width: 100%;
+    min-width: 275px;
 }
 .main-footer{
-	color:#AD7009;
-	opacity: 0.9;
+    clear: both;
+    color:#AD7009;
+	opacity: 0.9;    
 	background-color: #3C1D5E;
 	width: 100%;
-	height: 100px;
+	height: auto;
 }
 
 .info{
@@ -151,10 +195,10 @@ body{
 	color: azure;
 }
 .cpright{
-	color:azure;
-	font-size: 15px;
+	color: #bbbbbb/*#1E0A33*/;
+	font-size: 16px;
 	font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
-	font-weight: bold;
+	font-weight: bolder;
 	left: 0;
 	bottom: 0;
 }
