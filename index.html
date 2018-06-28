@@ -17,25 +17,40 @@
 </head>
 <body>
 	<header class="main-header">
-			<nav id="navbar">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="#">
-							<img id="awati-brand" src="images/icons/brand-coloridoo.png" alt="Marca da Empresa">
-						</a>
-						<div id="menu-header">
-							<ul class="nav navbar">
-								<li class="active"><a class="menu-button" href="#">Home</a></li>
-								<li><a class="menu-button" href="#servicos">Serviços</a></li>
-								<li><a class="menu-button" href="#produtos">Produtos</a></li>
-								<li><a class="menu-button" href="#equipe">Quem Somos</a></li>
-								<li><a class="menu-button" href="#contato">Contato</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>	
-	</header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-white">
+          <a class="navbar-brand" href="#">
+            <img src="images/icons/brand-coloridoo.png" alt="Logo da empresa">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        	<div class="collapse navbar-collapse" id="navbarDropdown">
+          		<ul class="navbar-nav navbar-left">
+            		<li class="nav-item active">
+                		<a class="menu-button" href="#banner">Home <span class="sr-only">(atual)</span></a>
+                	</li>
+              		<li class="nav-item">
+                		<a class="menu-button" href="#servicos">Serviços</a>
+                	</li>
+              		<li class="nav-item">
+                		<a class="menu-button" href="#produtos">Produtos</a>
+                	</li>
+              		<li class="nav-item">
+                		<a class="menu-button" href="#equipe">Quem Somos</a>
+                	</li>
+                	<li class="nav-item">
+                		<a class="menu-button" href="#Contato">Contato</a>
+            		</li>
+            	</ul>
+            	<ul class="navbar-nav navbar-right">
+      				<li><a href="https://awati.com.br/otrs/index.pl">
+      					<img src="images/icons/icone-mail-32.png">Portal</a></li>
+      				<li><a href="#">
+      					<img src="images/icons/icone-facebook-32.png">Chamados</a></li>
+    			</ul>
+          </div> 
+    	</nav>
+    </header>
 	<div id="banner" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 				<li data-target="#banner" data-slide-to="0" class="active"></li>
@@ -159,7 +174,7 @@
 		</form>
 		<hr class="my-5 w-75">
 	</section>
-	<footer class="main-footer">
+<footer class="main-footer">
 		<div class="container">
 			<div class="row pt-2">
 				<div class="text-left pr-2 borda col-sm-10">
