@@ -3937,12 +3937,12 @@ tbody.collapse.show {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: inline;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: left;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -3989,6 +3989,8 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  /*white-space: nowrap;
+  overflow: hidden;*/
 }
 
 .navbar-nav .nav-link {
@@ -4933,6 +4935,7 @@ tbody.collapse.show {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #bbbbbb;
+  opacity: 0.9;
   /*border-radius: 0.3rem;*/
 }
 

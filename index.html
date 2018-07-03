@@ -16,39 +16,42 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body data-spy="scroll" id="home" data-target=".navbar-fixed-top">
-		<nav class="navbar fixed-top">
-    			<div class="container-fluid">
-    				<a class="navbar-brand" href="#">
-    					<img src="images/icons/brand-coloridoo.png" alt="Logo da empresa">
-    				</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Menu">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<ul class="navbar-nav navbar-left bd">
-						<li class="nav-item active">
-							<a class="menu-button" href="#banner">Home<span class="sr-only">(atual)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="menu-button" href="#servicos">Serviços</a>
-						</li>
-						<li class="nav-item">
-							<a class="menu-button" href="#produtos">Produtos</a>
-						</li>
-						<li class="nav-item">
-							<a class="menu-button" href="#equipe">Quem Somos</a>
-						</li>
-						<li class="nav-item">
-							<a class="menu-button" href="#contato">Contato</a>
-						</li>
-					</ul>
-					<ul class="navbar-nav navbar-right bd">
-						<li class="mr-2"><a  href="sucupira.awati.com.br">
-							<img class="pr-1" src="images/icons/icone-mail-32.png">Portal</a></li>
-						<li class="mr-2"><a href="https://awati.com.br/otrs/index.pl">
-							<img class="pr-1" src="images/icons/icone-facebook-32.png">Chamados</a></li>
-					</ul>
-				</div>
-    		</nav>
+	<header class="main-header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-white">
+          <div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="images/icons/brand-coloridoo.png" alt="Logo da empresa">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Menu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<ul class="navbar-nav float-left">
+					<li class="nav-item active">
+						<a class="menu-button" href="#banner">Home<span class="sr-only">(atual)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="menu-button" href="#servicos">Serviços</a>
+					</li>
+					<li class="nav-item">
+						<a class="menu-button" href="#produtos">Produtos</a>
+					</li>
+					<li class="nav-item">
+						<a class="menu-button" href="#equipe">Quem Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="menu-button" href="#contato">Contato</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav">
+					<li class="mr-2 nav-item"><a class="redirect" href="https://sucupira.awati.com.br">
+						<img class="pr-1" src="images/icons/icone-portal.png" width="32" height="32">Portal</a></li>
+					<li class="mr-2 nav-item"><a class="redirect" href="https://awati.com.br/otrs/index.pl" target="_blank">
+						<img class="pr-1" src="images/icons/icone-chamados.png" width="32" height="32">Chamados</a></li>
+				</ul>
+			</div>
+    	</nav>
+    </header>
+	
 	<div id="banner" class="carousel slide" data-ride="carousel">
 		<!--<ol class="carousel-indicators">
 				<li data-target="#banner" data-slide-to="0" class="active"></li>
@@ -76,7 +79,7 @@
 		</a>
 	</div>
 	<section id="servicos">
-  		<hr class="my-5">
+  		<hr class="my-5 w-75">
    		<div class="container">
    			<div class="row">
    				<div class="col tipo">
@@ -98,6 +101,10 @@
    		</div>
     </section>
     <section id="produtos">
+    	<div class="jumbotron">
+    		<hr class="my-4">
+        	<p class="lead text-center m-2"> Nós da awati tecnologia planejada prezamos pela transparência da informação e para melhor atende-lo com tom cordial e amigavel blablablabalabalbalbalbalba.</p>
+    	</div>
     	<div id="info-produto" class="media mb-5">
     		<img class="align-self-center mr-3 ml-3" src="http://via.placeholder.com/375x400" alt="Imagem Sucupira">
     		<div class="media-body">
@@ -180,9 +187,9 @@
 				</div>
 				<div class="social col-sm-2">
 				<div class="media m-4">
-					<a href="https://www.facebook.com/awatitecnologia/"><img class="btn-social rounded-circle m-1 align-content-around" src="images/icons/icone-facebook-32.png" alt="Ir para facebook"></a>
+					<a href="https://www.facebook.com/awatitecnologia/"><img class="btn-social rounded-circle m-1 align-content-around" src="images/icons/icone-face-40.png" alt="Ir para facebook" width="40" height="40"></a>
 					<a href="mailto:daniel@awati.com.br">
-						<img class="btn-social rounded-circle m-1 align-content-around" src="images/icons/icone-mail-32.png">
+						<img class="btn-social rounded-circle m-1 align-content-around" src="images/icons/icone-mail-40.png" width="40" height="40">
 					</a>
 				</div>
 			</div>
