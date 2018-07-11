@@ -25,7 +25,7 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Menu">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<ul class="navbar-nav float-left">
+				<ul class="navbar-nav float-left mr-auto">
 					<li class="nav-item active">
 						<a class="menu-button" href="#banner">Home<span class="sr-only">(atual)</span></a>
 					</li>
@@ -43,10 +43,14 @@
 					</li>
 				</ul>
 				<ul class="navbar-nav">
-					<li class="mr-2 nav-item"><a class="redirect" href="https://sucupira.awati.com.br">
-						<img class="pr-1" src="images/icons/icone-portal.png" width="32" height="32">Portal</a></li>
-					<li class="mr-2 nav-item"><a class="redirect" href="https://awati.com.br/otrs/index.pl" target="_blank">
-						<img class="pr-1" src="images/icons/icone-chamados.png" width="32" height="32">Chamados</a></li>
+					<li class="mr-2 nav-item"><a class="redirect text-uppercase" href="https://sucupira.awati.com.br"
+						onmouseover="portal.src='http://via.placeholder.com/32x32'"
+						onmouseout="portal.src='images/icons/icone-portal-32.png'">
+						<img id="portal" class="pr-1" src="images/icons/icone-portal-32.png">Portal</a></li>
+					<li class="mr-2 nav-item"><a class="redirect text-uppercase" href="https://awati.com.br/otrs/index.pl" target="_blank"
+						onmouseover="helpdesk.src='http://via.placeholder.com/32x32'"
+						onmouseout="helpdesk.src='images/icons/icone-chamados-32.png'">
+						<img id="helpdesk" class="pr-1" src="images/icons/icone-chamados-32.png">Chamados</a></li>
 				</ul>
 			</div>
     	</nav>
@@ -173,7 +177,7 @@
 				</div>
 			</div>
 			<div class="text-center mt-4">
-				<button type="submit" class="btn btn-outline-awati btn-lg btn-block">Enviar</button>
+				<button type="submit" class="btn btn-outline-awati btn-lg btn-block" disabled>Enviar</button>
 				<span class="sr-only">Enviar</span>
 			</div>
 		</form>
