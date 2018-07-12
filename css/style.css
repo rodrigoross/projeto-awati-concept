@@ -37,7 +37,7 @@ body { padding-top: 40px; }
 .bd{
     border: medium solid #5C2D91;
 }
-.nav-item .menu-button:hover{
+.ativo, .menu-button:hover{
     text-decoration: none;
     color:#5C2D91;
     border-bottom: 3px solid #FAA61A ;
