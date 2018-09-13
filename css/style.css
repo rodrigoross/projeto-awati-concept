@@ -23,7 +23,8 @@ body { padding-top: 40px; }
     margin-bottom: 20px;
     margin-top: 30px;
 } 
-.nav-item .menu-button{
+.nav-item .menu-button,
+.ativo{
     /* Para poder forçar o menu na parte de baixo alinhando com a logo*/
 	/*display: inline;    */
 	text-decoration: none;
