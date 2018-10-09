@@ -14,6 +14,12 @@ body { padding-top: 40px; }
 @media screen and (max-width: 768px) {
     body { padding-top: 0px; }
 }
+
+.box{
+    width: 80%;
+    margin: 0 10%;
+    display: inline-block;
+}
 /**
    * ------------------------------------------------------------------------
    * Cabeçalho
@@ -23,6 +29,7 @@ body { padding-top: 40px; }
     margin-bottom: 20px;
     margin-top: 30px;
 } 
+
 .nav-item .menu-button,
 .ativo{
     /* Para poder forçar o menu na parte de baixo alinhando com a logo*/
@@ -71,6 +78,37 @@ body { padding-top: 40px; }
 	top:1px;
 }
 
+.btn-nav {
+	-moz-box-shadow:inset 1px 33px 0px -14px #ffffff;
+	-webkit-box-shadow:inset 1px 33px 0px -14px #ffffff;
+	box-shadow:inset 1px 40px 0px -14px #ffffff;
+	background-color:#ffffff;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #5c2d91;
+	display:inline-block;
+	cursor:pointer;
+	color:#bbbbbb;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:3px 20px;
+	text-decoration:none;
+}
+.btn-nav:hover {
+    background-color:#FAA61A;
+    border:1px solid #5c2d91;
+    box-shadow:inset 1px 38px 0px -14px #ffff;
+    color: #5c5c5c;
+}
+.btn-nav:active {
+	position:relative;
+	top:1px;
+}
+
+   
+
 /**
    * ------------------------------------------------------------------------
    * Corpo
@@ -110,16 +148,59 @@ body { padding-top: 40px; }
     box-shadow: 0 0 0 0.2rem rgba(156, 40, 167, 0.5);
   }
 
-
 .btn-social:hover{
     background-color:#FAA61A;
 }
+
+/* Produtos */
+.nSelecionado{
+    display: none;
+    visibility: hidden;
+}
+
+.selecionado{
+    display: block;
+    visibility: visible;
+    text-decoration: none;
+}
+
+.estilo, .viavel{
+    margin-left: 20%;
+    list-style-type: circle;
+}
+.viavel{
+    color: #666666;
+}
+
+/*Vantagem*/
+.vantagem{
+    width: 45%;
+    margin: 0.75em 1.5em;
+}
+.vantagem:hover ,
+.vantagem-sm:hover{
+    color: #AD7009;
+}
+.vantagem-bg, {
+    color: #1E0A33;
+    width: 100%;
+}
+.vantagem-sm{
+    color: #bbbbbb;
+    margin: 1em 4em;
+    display: inline-block;
+}
+
 #produto,
 #equipe,
 #produto{
 	clear: both;
 	margin-top: 20px;
 	padding-top: 5px;
+}
+
+.ident{
+    text-indent: 2.5em;
 }
 
 /*Banner*/

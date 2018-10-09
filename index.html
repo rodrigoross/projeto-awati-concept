@@ -8,16 +8,16 @@
 <meta name="description" content="Awati tecnologia planejada, &eacute; uma empresa de TI que opera em Cuiab&aacute;/V&aacute;rzea Grande, prestando servi&ccedil;os de consultoria, outsourcing e implanta&ccedil;&otilde;es para empresas nas mais diversos ramos de trabalho.">
 <title>Awati - Tecnologia Planejada</title>
 <link rel="icon" type="imagem/png" href="images/icons/favicon.png" />
+<!--jQuery CDN 3.2.1
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<!--Popper
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+<!--Bootsrap.Js
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
 <!-- Booststrap 4.0 -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <!--Author Stylesheet-->
 <link href="css/style.css" rel="stylesheet" type="text/css">
-<!--jQuery CDN 3.2.1-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<!--Popper-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<!--Bootsrap.Js-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!--Author JavaScript-->
 <script src="scripts/script.js"></script>
 </head>
@@ -48,16 +48,12 @@
 						<a class="menu-button" href="#contato">Contato</a>
 					</li>
 				</ul>
-				<ul class="navbar-nav">
-					<li class="mr-2 nav-item"><a class="redirect text-uppercase" href="https://sucupira.awati.com.br"
-						onmouseover="portal.src='images/icons/icone-portal-32b.png'"
-						onmouseout="portal.src='images/icons/icone-portal-32.png'">
-						<img id="portal" class="pr-1" src="images/icons/icone-portal-32.png">Portal</a></li>
-					<li class="mr-2 nav-item"><a class="redirect text-uppercase" href="https://awati.com.br/otrs/index.pl" target="_blank"
-						onmouseover="helpdesk.src='images/icons/icone-chamados-32b.png'"
-						onmouseout="helpdesk.src='images/icons/icone-chamados-32.png'">
-						<img id="helpdesk" class="pr-1" src="images/icons/icone-chamados-32.png">Chamados</a></li>
-				</ul>
+				<div>
+					<div>
+						<button class="btn-nav"><a>Virti</a></button>
+						<button class="btn-nav"><a>AwatiDesk</a></button>
+					</div>
+				</div>
 			</div>
     	</nav>
     </header>
@@ -89,6 +85,12 @@
 		</a>
 	</div>
 	<section id="servicos">
+		<div class="my-jumbotron1">
+			<hr class="my-4 bg-white">
+			<div class="secao-tit box">
+				<p class="display-2 m-2 text-white">Serviços prestados</p>
+			</div>
+		</div>
   		<hr class="my-5 w-75">
    		<div class="container">
    			<div class="row">
@@ -98,11 +100,6 @@
 						<p> Consultoria e análise da sua infraestrutura assim como projetos de implantação.</p>
    				</div>
    				<div class="col tipo">
-   					<img class="img-servico" src="http://via.placeholder.com/275x400"  alt="Icone terceirização">
-					<h3>Outsourcing</h3>
-					<p>Help-Desk e prestação de serviços aos usuários e infraestrutura local assim como manteneção do ambiente de serviço.</p>
-   				</div>
-   				<div class="col tipo">
    					<img class="img-servico" src="http://via.placeholder.com/275x400"  alt="Icone implantação">
 					<h3>Implantações</h3>
 					<p>Acompanhamos desde a análise do seu problema até a implantação final do projeto próprio para sua empresa.</p>
@@ -110,48 +107,139 @@
    			</div>
    		</div>
     </section>
-    <section id="produtos">
-    	<div class="my-jumbotron2">
+	
+	<section id="produtos">
+		<div class="my-jumbotron2">
 			<hr class="my-4">
-        	<p class="lead text-center m-2"> Pellentesque pretium cursus congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed dignissim, quam eget porttitor eleifend, diam metus dapibus urna, ac ultricies orci nisl a nisl. Curabitur porttitor, metus vel placerat mollis, lectus sem pretium odio, nec tempor metus mi id dolor. Sed rhoncus.</p>
-    	</div>
-    	<div id="info-produto" class="media mb-5">
-    		<img class="align-self-center mr-3 ml-3" src="http://via.placeholder.com/375x400" alt="Imagem Sucupira">
-    		<div class="media-body">
-   				<h2 class="display-2 text-right text-uppercase mr-2">Produto</h2>
-    			<hr class="my-3">
-					 <p class="text-center"> Duis interdum tristique mauris, vitae accumsan justo sodales ornare. Nunc mollis sit amet massa in laoreet. Proin arcu lorem, cursus vitae faucibus sit amet, dictum sit amet diam. Cras sodales, elit euismod mattis fringilla, velit quam auctor enim, nec faucibus elit magna vel ante. Sed et purus suscipit, fringilla sapien.</p>
-					 <p class="text-center"> Suspendisse condimentum vel justo sit amet malesuada. Aenean bibendum vehicula dolor ac convallis. Nullam convallis dictum dolor ac tincidunt. Vivamus ligula nisi, consequat sit amet condimentum vitae, porta non mauris. Donec commodo libero nunc, eget pulvinar urna laoreet sed. Nullam id nibh diam. Praesent euismod vestibulum nibh, sed mollis neque.</p>
-	  	  </div>
-    	</div>
+        	<p class="box display-2 text-right text-uppercase m-2 text-black">VIRTI</p>
+		</div>
+		<!-- subseçoes-->
+    	<div>
+			<div class="media box mb-5">
+				<img class="align-self-center mr-3 ml-3" src="http://via.placeholder.com/375x400" alt="Imagem Sucupira">
+				<div class="media-body">
+						<h2 class="display-5 text-right text-uppercase mr-2">O QUE É?</h2>
+					<hr class="my-3">
+					<p class="text-justify ident">O Computador por Assinatura é um serviço de virtualização de desktop. Isso significa que não é necessário mais um computador para acessar arquivos, dispositivos, aplicativos e dados que estejam em Nuvem. Uma ferramenta que diminui os custos, aumenta a produtividade e atende a necessidade especifica de cada pessoa/empresa. Além de proporcionar mobilidade e segurança total.</p>
+				</div>
+			</div>
+	
+			<div class="box mb-5">
+				<div class="media-body">
+					<h2 class="display-5 text-left text-uppercase mr-2">Como funciona?</h2>
+					<hr class="my-3">
+					<p class="text-justify ident">O Computador por Assinatura é um serviço de virtualização de desktop. Isso significa que não é necessário mais um computador para acessar arquivos, dispositivos, aplicativos e dados que estejam em Nuvem. Uma ferramenta que diminui os custos, aumenta a produtividade e atende a necessidade especifica de cada pessoa/empresa. Além de proporcionar mobilidade e segurança total.</p>
+			</div>
+			<br/>
+				<div class="como-funciona bd">
+					<img class="img-fluid" src="http://via.placeholder.com/1200x500"/>
+				</div>
+			<br/>
+			</div>
+	
+			<div class="box mb-5">
+				<div class="media-body">
+					<h2 class="display-5 text-right text-uppercase mr-2">PARA QUEM FAZEMOS?</h2>
+						<hr class="my-3">
+						<p class="text-justify ident">O Computador por Assinatura é um serviço de virtualização de desktop. Isso significa que não é necessário mais um computador para acessar arquivos, dispositivos, aplicativos e dados que estejam em Nuvem. Uma ferramenta que diminui os custos, aumenta a produtividade e atende a necessidade especifica de cada pessoa/empresa. Além de proporcionar mobilidade e segurança total às:</p>
+				</div>
+				<ul class="lista box">
+					<li class="viavel">Empresas que estão iniciando as atividades - menor patrimônio, menos riscos.</li>
+					<li class="viavel">Empresas que têm projetos com tempo determinados (temporários).</li>
+					<li class="viavel">Empresas que estão trocando/adquirindo computadores.</li>
+					<li class="viavel">Empresas que precisam de computadores, mas fazem uso reduzido deste (menos horas).</li>
+					<li class="viavel">Empresas de crescimento rápido/Startups.</li>
+					<li class="viavel">Instituições filantrópicas (sem fins lucrativos).</li>
+					<li class="viavel">Instituições de ensino, públicas e particulares.</li>
+					<li class="viavel">Empresas públicas.</li>
+					<li class="viavel">Franquias.</li>
+				</ul>
+			</div>
+			<br/>
+			<div class="box mb-5">
+				<div class="media-body">
+					<h2 class="display-5 text-left text-uppercase mr-2">Mas, quais as vantagens?</h2>
+					<hr class="my-3">
+					<p class="text-justify ident">Os beneficios de utilizar o Virti são vários porque você não dá uma olhada. Clique nas diferentes vantagens e veja nossas propostas.</p>
+				</div>
+			</div>
+
+			<div class="box" id="vantagens">
+				<div class="vantagem float-left" id="v1">
+					<h1 id="aga1" class="display-1" onclick="vantagem('v1','info1')">Vantagem 1</h1>
+					<div class="nSelecionado" id="info1">
+						<p class="ident">A awati se preocupa com...</p>
+						<div class="lista">
+							<ul>
+								<li class="viavel">Você paga apenas pelo que usa.</li>
+								<li class="viavel">Sistema simples e fácil de usar.</li>
+								<li class="viavel">Você paga apenas pelo que usa.</li>
+								<li class="viavel">Sistema simples e fácil de usar.</li>
+								<li class="viavel">Você paga apenas pelo que usa.</li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="vantagem float-left" id="v2">
+					<h1 id="aga2" class="display-1" onclick="vantagem('v2','info2')">Vantagem 2</h1>
+					<div class="nSelecionado" id="info2">
+						<p class="ident">A awati se preocupa com...</p>
+						<div class="lista">
+							<ul>
+								<li class="viavel">Você paga apenas pelo que usa.</li>
+								<li class="viavel">Sistema simples e fácil de usar.</li>
+								<li class="viavel">Você paga apenas pelo que usa.</li>
+								<li class="viavel">Sistema simples e fácil de usar.</li>
+								<li class="viavel">Você paga apenas pelo que usa.</li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="vantagem float-left" id="v3">
+					<h1 id="aga3" class="display-1" onclick="vantagem('v3','info3')">Vantagem 3</h1>
+					<div class="nSelecionado" id="info3">
+						<p class="ident">A awati se preocupa com...</p>
+						<div class="lista">
+							<ul>
+								<li class="viavel">Você paga apenas pelo que usa.</li>
+								<li class="viavel">Sistema simples e fácil de usar.</li>
+								<li class="viavel">Você paga apenas pelo que usa.</li>
+								<li class="viavel">Sistema simples e fácil de usar.</li>
+								<li class="viavel">Você paga apenas pelo que usa.</li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="vantagem float-left" id="v4">
+					<h1 id="aga4" class="display-1" onclick="vantagem('v4','info4')">Vantagem 4</h1>
+					<div class="nSelecionado" id="info4">
+						<p class="ident">A awati se preocupa com...</p>
+						<div class="lista">
+							<ul>
+								<li class="viavel">Você paga apenas pelo que usa.</li>
+								<li class="viavel">Sistema simples e fácil de usar.</li>
+								<li class="viavel">Você paga apenas pelo que usa.</li>
+								<li class="viavel">Sistema simples e fácil de usar.</li>
+								<li class="viavel">Você paga apenas pelo que usa.</li>								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
     </section>
     <section id="equipe">
     	<div class="my-jumbotron1">
 			<hr class="my-4 bg-white">
-        	<p class="lead text-center m-2 text-white"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer mollis ipsum in lacus interdum, non tincidunt justo pharetra. Nullam tempus lacus id libero venenatis vehicula. Sed vulputate auctor mauris, sit amet vestibulum erat luctus vel. Aenean molestie, mi eu auctor iaculis, ante diam facilisis odio.</p>
-    	</div>
-    	<div class="container w-75 d-block mb-5">
-    		<div class="media">
-    			<img class="align-self-center mr-3 ml-3 rounded-circle" src="http://via.placeholder.com/200x225" alt="Daniel G Baranjak">
-				<div class="media-body">
-					<h4 class="display-4">Funcionário</h4>
-					<p class="lead text-left ml-2"> Fusce pulvinar, tellus ac gravida pulvinar, lorem dui varius felis, in porta ligula.</p>
-    			</div>
-    		</div>
-    		<div class="media">
-				<div class="media-body">
-					<h4 class="display-4 text-right">Funcionário</h4>
-					<p class="lead text-right ml-2"> Suspendisse risus arcu, maximus non congue eget, pellentesque non lacus. Nunc nec hendrerit.</p>
-    			</div>
-    			<img class="align-self-center mr-3 ml-3 rounded-circle" src="http://via.placeholder.com/200x225" alt="Daniel G Baranjak">
-    		</div>
-    		<div class="media">
-    			<img class="align-self-center mr-3 ml-3 rounded-circle" src="http://via.placeholder.com/200x225" alt="Daniel G Baranjak">
-				<div class="media-body">
-					<h4 class="display-4">Funcionário</h4>
-					<p class="lead text-left ml-2"> Phasellus a ante euismod, consequat velit sed, placerat erat. Nulla facilisi. In non.</p>
-    			</div>
-    		</div>
+        	<div class="secao-tit box">
+				<p class="display-2 m-2 text-white">AWATI</p>
+			</div>
+		</div>
+		<div class="box">
+			<p class="text-justify m-3 ident">Desde 2010, oferecemos soluções personalizadas aos nossos clientes, através de um diagnóstico preciso das necessidades, propondo ações precisas e integradas para cada um. Idealizamos, planejamos e implantamos projetos que trazem resultados reais e definitivos.</p>
+			<p class="text-justify m-3 ident">Somos alta produtividade de uma maneira simples. Somos a forma mais inteligente de utilizar a tecnologia. Somos a Awati. E somos o parceiro que você precisa para virtualizar desktops, com segurança, qualidade e alto desempenho.</p>
+			<p class="text-justify m-3 ident">Reconhecidos pelo mercado e valorizados pelos clientes, lançamos o virti: uma nova forma de usar computadores.</p>
 		</div>
     </section>
 	<section id="contato">
@@ -159,7 +247,7 @@
 			<hr class="my-4">
 		  	<p class="lead text-center">Se interessou pelos nosso trabalho e quer fazer um orçamento, entre em contato conosco, que iremos retornar o mais breve possivel, ou entre em contato atráves de uma ligação!</p>
 		</div>
-  		<form class="formulario" name="formContato" method="POST" onsubmit="return(validate());">
+  		<form class="formulario box" name="formContato" method="POST" onsubmit="return(validate());">
 			<div class="form-row">
 				<div class="col-sm-6">
                	  <div class="form-group">
@@ -188,8 +276,8 @@
 				<span class="sr-only">Enviar</span>
 			</div>
 		</form>
-		<hr class="my-5 w-75">
 	</section>
+	<br/>
 <footer class="main-footer">
 		<div class="container">
 			<div class="row pt-2">
@@ -198,7 +286,12 @@
 				</div>
 				<div class="social col-sm-2">
 				<div class="media m-4">
-					<a href="https://www.facebook.com/awatitecnologia/"><img class="btn-social rounded-circle m-1 align-content-around" src="images/icons/icone-face-40.png" alt="Ir para facebook" width="40" height="40"></a>
+					<div class="view overlay">
+						<img class="btn-social rounded-circle m-1 align-content-around" src="images/icons/icone-face-40.png" alt="Ir para facebook" width="40" height="40"></a>
+						<div class="mask flex-center rgba-red-strong">
+							<a href="https://www.facebook.com/awatitecnologia/"></a>
+						</div>
+					</div>
 					<a href="mailto:daniel@awati.com.br">
 						<img class="btn-social rounded-circle m-1 align-content-around" src="images/icons/icone-mail-40.png" width="40" height="40"  alt="Enviar um e-mail">
 					</a>
